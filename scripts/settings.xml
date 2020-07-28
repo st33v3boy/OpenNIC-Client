@@ -1,0 +1,10 @@
+<settings>
+    <!-- https://wiki.opennic.org/api -->
+    <setting key="ApiUri">
+        <value>
+            <![CDATA[
+            https://api.opennic.org/geoip/?json&res=2&ipv=4&anon=true
+            ]]>
+        </value>
+    </setting>
+</settings>
