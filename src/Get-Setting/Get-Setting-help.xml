@@ -95,7 +95,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-Setting -Key "ApiUri" -Settings (Get-Content -Path "$ENV:OPENNIC_CLIENT_SRC_PATH\scripts\settings.xml")</dev:code>
+        <dev:code>PS C:\&gt; Get-Setting -Key "ApiUri" -Settings (Get-Content -Path "$ENV:OPENNIC_CLIENT_SRC_PATH\src\settings.xml")</dev:code>
         <dev:remarks>
           <maml:para>Retrieves ApiUri's value.</maml:para>
         </dev:remarks>

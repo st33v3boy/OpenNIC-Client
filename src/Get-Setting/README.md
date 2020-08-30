@@ -23,7 +23,7 @@ Retrieves setting's value by its key.
 
 ### Example 1
 ```powershell
-PS C:\> Get-Setting -Key "ApiUri" -Settings (Get-Content -Path "$ENV:OPENNIC_CLIENT_SRC_PATH\scripts\settings.xml")
+PS C:\> Get-Setting -Key "ApiUri" -Settings (Get-Content -Path "$ENV:OPENNIC_CLIENT_SRC_PATH\src\settings.xml")
 ```
 
 Retrieves ApiUri's value.

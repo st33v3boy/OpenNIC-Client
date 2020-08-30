@@ -33,12 +33,12 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 
 [Files]
-Source: "{#GetEnv('OPENNIC_CLIENT_SRC_PATH')}\7up\*"; DestDir: "{app}\7up"; Excludes: "setup.iss, exe"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "{#GetEnv('OPENNIC_CLIENT_SRC_PATH')}\scripts\*"; DestDir: "{app}\scripts"; Excludes: ".vscode, .tools"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#GetEnv('OPENNIC_CLIENT_SRC_PATH')}\setup\*"; DestDir: "{app}\setup"; Excludes: "setup.iss, exe"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#GetEnv('OPENNIC_CLIENT_SRC_PATH')}\src\*"; DestDir: "{app}\src"; Excludes: ".vscode, .tools"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Run]
-Filename: "{app}\7up\install.cmd"; Parameters: """{app}"""; Flags: runascurrentuser runhidden
+Filename: "{app}\setup\install.cmd"; Parameters: """{app}"""; Flags: runascurrentuser runhidden
 
 [UninstallRun]
-Filename: "{app}\7up\uninstall.cmd"; Flags: runascurrentuser runhidden
+Filename: "{app}\setup\uninstall.cmd"; Flags: runascurrentuser runhidden
